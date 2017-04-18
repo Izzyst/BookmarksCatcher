@@ -1,0 +1,168 @@
+body {
+    background-color: white;
+    font-family: arial, sans-serif;
+    text-align: center;
+}
+
+#menuBarBtn {
+    position: fixed;
+    /*fixed powoduje, ze element zawsze zostaje w jednym miejscu*/
+    left: 2.5%;
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(#FFF, #DDD);
+    border: #AAA 1px solid;
+    border-radius: 2px;
+    padding: 2px 5px;
+    top: 15%;
+    cursor: pointer;
+    transition: border 0.3s linear 0s;
+}
+
+
+/* podświetlenie ramki*/
+
+#menuBarBtn:hover {
+    border: rgb(255, 128, 128) 1px solid;
+}
+
+
+/*: hover jest odpowiedzialny za akcje po najechaniu myszą*/
+
+#menuBarBtn:hover div {
+    background: rgb(255, 128, 128);
+}
+
+#menuBarBtn>div {
+    width: 25px;
+    height: 4px;
+    background: #333;
+    margin: 4px 0px;
+    border-radius: 4px;
+    transition: background 0.3s linear 0s;
+}
+
+#menuBar {
+    position: absolute;
+    display: none;
+    left: 0px;
+    top: 200px;
+    width: 200px;
+    height: 100%;
+    background: rgba(255, 153, 128, 0.5);
+    transition: right 0.3s linear 0s;
+    text-align: left;
+    font-size: 18px;
+    color: rgb(89, 89, 89);
+}
+
+#menuBar a {
+    color: rgb(89, 89, 89);
+    text-decoration: none;
+    margin-top: 25px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+#menuBar a:hover {
+    color: rgb(89, 89, 89);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+#addTagField {
+    width: 130px;
+    height: 30px;
+    background: rgba(92, 176, 207, 0.26);
+}
+
+#logoLine {
+    text-align: center;
+}
+
+#menuBarText {
+    margin-left: 15px;
+}
+
+#menu {
+    width: 100%;
+    height: 35px;
+    background: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu a {
+    color: rgb(89, 89, 89);
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#menu a:hover {
+    color: rgb(255, 128, 128);
+}
+
+#menu ul li {
+    list-style: none;
+    display: inline;
+}
+
+#logo {
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    #logo {
+        width: 86.99999%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #logo {
+        width: 99.99999%;
+    }
+}
+
+#pageContent {
+    float: left;
+    margin-left: 55px;
+}
+
+#Container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imgLogo {
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search_container {
+    position: relative;
+    /*position: absolute;
+    width: 300px;
+    height: 200px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;*/
+}
+
+.searchField {
+    height: 38px;
+    width: 600px;
+    font-size: 18px;
+    background: #fff7ee;
+}

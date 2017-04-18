@@ -1,0 +1,68 @@
+
+body{
+    /*automatyczne dopasowanie do przegladarki*/
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    background-image: url("../img/stardust.png");
+    background-repeat: repeat;
+}
+
+#logo{
+    color: white;
+    text-align: left;
+    font-size: 100px;
+    padding: 60px;
+    transform: translate(28%,0%);
+}
+.container{
+    position: absolute;
+    width:500px;
+    height:400px;
+    text-align:center;
+    background-color: rgba(219, 198, 191, 0.5); /* ostatnia współrzedna okresla przezroczystosc koloru*/
+    margin: 0 auto;
+    border-radius:8px;
+    top:50%;
+    left:50%;
+    padding:15px;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+input[type ="email"], input[type ="password"]{
+    margin-top: 40px;
+    height: 45px;
+    width: 300px;
+    font-size: 18px;
+    background-color: #fff;
+
+}
+
+form-input{
+    content:"\f007";
+    position: absolute;
+    font-family: "FontAwesome";
+    font-size: 30px;
+    margin-top: 80px;
+    height: 45px;
+    width: 300px;
+    font-size: 18px;
+    background-color: #fff;
+}
+
+.btn-login{
+    padding: 15px 45px;
+    color: #fff;
+    background-color:  #8c8c8c;
+    border-radius: 4px;
+    border: none;
+    margin-top: 30px;
+    border-bottom: 4px solid #B5B5B5;
+    border-bottom:20px;
+}
+
+a{
+    color: #B5B5B5;
+}

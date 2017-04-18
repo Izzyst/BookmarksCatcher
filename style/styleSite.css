@@ -1,0 +1,133 @@
+
+/*body{
+    /*automatyczne dopasowanie do przegladarki
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    background-image: url("../img/stardust.png");
+    background-repeat: repeat;
+}*/
+div.img {
+    padding: 10px;
+    border: 3px rgba(255, 187, 153, 0.55) solid;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+div.img img {
+    width: 25%;
+    height: auto;
+    border: 2px;
+}
+
+div.img:hover {
+    border: 3px rgb(255, 187, 153) solid;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.responsive {
+    padding: 15px 15px 15px 15px;
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 50.99999%;
+        height: 200px;
+        margin: 6px 6px;
+    }
+    .showContentFolder {
+        background: rgba(255, 255, 255, 0.72);
+        background-size: cover;
+        position: fixed;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        top: 0px;
+        left: 0px;
+        z-index: 1000;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 85%;
+    }
+    .showContentFolder {
+        background: rgba(255, 255, 255, 0.72);
+        background-size: cover;
+        position: fixed;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        top: 0px;
+        left: 0px;
+        z-index: 1000;
+        overflow: hidden;
+    }
+}
+
+
+/* ustawić stały border 
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+
+
+/*
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}*/
+
+.tag {
+    float: right;
+}
+
+#selectTag {
+    position: fixed;
+    display: none;
+    background: rgba(247, 157, 61, 0.7);
+    text-align: center;
+    height: 350px;
+    width: 250px;
+    left: 35%;
+    right: 40%;
+    transform: translate(25%, 15%);
+    z-index: 10px;
+}
+
+#tagTurnOffBtn {
+    position: relative;
+    margin-top: 320px;
+    text-align: center;
+    vertical-align: bottom;
+    display: table-cell;
+}
+
+#tagnames {
+    text-align: center;
+    font-size: 20px;
+}
